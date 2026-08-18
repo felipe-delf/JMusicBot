@@ -1,40 +1,127 @@
+# ==================================================
+# Java
+# ==================================================
+
+*.class
+*.jar
+*.war
+*.ear
+
+# Java crash logs
+hs_err_pid*
+replay_pid*
+
+# ==================================================
 # Maven
+# ==================================================
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
+pom.xml.next
 release.properties
+dependency-reduced-pom.xml
 
-# Java
-*.class
-*.log
+# Maven Wrapper - não ignorar
+# mvnw
+# mvnw.cmd
+# .mvn/wrapper/maven-wrapper.jar
 
-# IntelliJ IDEA
-.idea/
-*.iml
-*.iws
-*.ipr
+# ==================================================
+# Spring Boot
+# ==================================================
 
-# VS Code
-.vscode/
+spring-shell.log
 
-# Eclipse
-.classpath
-.project
-.settings/
-
-# OS
-.DS_Store
-Thumbs.db
-
+# ==================================================
 # Environment / Secrets
+# ==================================================
+
 .env
 .env.*
 !.env.example
 
+# ==================================================
+# IDE - IntelliJ IDEA
+# ==================================================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ==================================================
+# IDE - Eclipse
+# ==================================================
+
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# ==================================================
+# IDE - VS Code
+# ==================================================
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ==================================================
+# OS
+# ==================================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==================================================
+# Logs
+# ==================================================
+
+*.log
+logs/
+
+# ==================================================
 # Temporary files
+# ==================================================
+
 *.tmp
 *.temp
+*.swp
+*.swo
+*~
 
-# Spring
-spring-shell.log
+# ==================================================
+# Build / Generated files
+# ==================================================
+
+build/
+bin/
+generated/
+
+# ==================================================
+# Test / Coverage
+# ==================================================
+
+.coverage/
+coverage/
+*.exec
+
+# ==================================================
+# Local configuration
+# ==================================================
+
+application-local.yml
+application-local.yaml
+application-local.properties
+
+# ==================================================
+# Docker local environment
+# ==================================================
+
+docker-compose.override.yml
