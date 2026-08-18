@@ -116,8 +116,19 @@ O JMusicBot terá como objetivo permitir que usuários de um servidor Discord po
 
 A aplicação será desenvolvida seguindo uma arquitetura modular, buscando separação de responsabilidades e baixo acoplamento entre os componentes.
 
-Visão inicial:
+O projeto utiliza uma abordagem inspirada em **Clean Architecture / Arquitetura Hexagonal**, de forma leve, buscando separar as responsabilidades da aplicação e reduzir o acoplamento entre as regras de negócio e as tecnologias externas.
 
+### Estrutura de pacotes
+
+```text
+br.com.jmusicbot
+├── domain
+├── application
+├── infrastructure
+├── discord
+├── configuration
+└── observability
+````
 ```text
 Discord
    │
