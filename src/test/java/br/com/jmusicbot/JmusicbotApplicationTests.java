@@ -1,6 +1,5 @@
 package br.com.jmusicbot;
 
-import br.com.jmusicbot.domain.CalculadoraTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
