@@ -5,3 +5,10 @@ services:
                 - "8080:8080"
               environment:
                 SPRING_PROFILE_ACTIVE: dev
+
+                # Futuramente adicionar:
+                # lavalink:
+                #   ...
+                #
+                # postgres:
+                #   ...
