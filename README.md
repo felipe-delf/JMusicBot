@@ -96,8 +96,13 @@ O JMusicBot terá como objetivo permitir que usuários de um servidor Discord po
 
 - Java 21
 - Spring Boot
+- Spring Boot Actuator
 - Maven
-- JUnit / Spring Boot Test
+- JUnit 5
+- Spring Boot Test
+- Docker
+- Docker Compose
+- Git / GitHub
 
 ### Planejadas
 
@@ -106,49 +111,30 @@ O JMusicBot terá como objetivo permitir que usuários de um servidor Discord po
 - YouTube API / integração de pesquisa
 - Spotify Web API
 - PostgreSQL
-- Docker
 - GitHub Actions
 - Azure
 
 ---
 
-## Arquitetura
+## Como executar
 
-A aplicação será desenvolvida seguindo uma arquitetura modular, buscando separação de responsabilidades e baixo acoplamento entre os componentes.
+### Pré-requisitos
 
-O projeto utiliza uma abordagem inspirada em **Clean Architecture / Arquitetura Hexagonal**, de forma leve, buscando separar as responsabilidades da aplicação e reduzir o acoplamento entre as regras de negócio e as tecnologias externas.
+Para executar o projeto localmente, é necessário ter instalado:
 
-### Estrutura de pacotes
+- Java 21
+- Docker
+- Docker Compose
 
-```text
-br.com.jmusicbot
-├── domain
-├── application
-├── infrastructure
-├── discord
-├── configuration
-└── observability
-````
-```text
-Discord
-   │
-   ▼
-JDA
-   │
-   ▼
-Application
-   │
-   ├── Music
-   ├── Queue
-   ├── Search
-   └── Playlist
-          │
-          ├── YouTube
-          └── Spotify
-          
-   │
-   ▼
-Lavalink
-   │
-   ▼
-Audio Player
+O projeto possui o Maven Wrapper, portanto não é necessário instalar o Maven separadamente.
+
+---
+
+## Executando com Maven
+
+Para executar a aplicação localmente:
+
+### Windows
+
+```powershell
+.\mvnw spring-boot:run
