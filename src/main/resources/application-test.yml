@@ -1,5 +1,5 @@
 discord:
-  token: test-token-fake
+  token: test_token_fake
 
 spring:
   application:

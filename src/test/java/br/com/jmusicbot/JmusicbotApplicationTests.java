@@ -14,7 +14,4 @@ class JmusicbotApplicationTests {
 	void contextLoads() {
 	}
 
-	@Autowired
-	private DiscordProperties discordProperties;
-
 }
