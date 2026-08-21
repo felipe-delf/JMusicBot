@@ -1,5 +1,5 @@
 discord:
-  token: ${DISCORD_TOKEN:?DISCORD_TOKEN não configurado}
+  token: ${DISCORD_TOKEN:}
 
 management:
   endpoints:
